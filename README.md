@@ -1,6 +1,6 @@
 # AssistenteGABI
 
-Bem-vindo(a) ao AssistenteGABI! 🚀
+Bem-vindo a AssistenteGABI! 🚀
 
 ## Como Contribuir?
 
