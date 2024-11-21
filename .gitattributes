@@ -1,0 +1,13 @@
+# Definir arquivos de texto para o formato de linha de final de linha LF
+* text=auto
+
+# Especificar arquivos binários para não tentarem ser tratados como texto
+*.jpg binary
+*.png binary
+*.gif binary
+*.pdf binary
+*.zip binary
+
+# Garantir que arquivos de código Python e outros scripts usem o formato correto de final de linha
+*.py text eol=lf
+*.sh text eol=lf
