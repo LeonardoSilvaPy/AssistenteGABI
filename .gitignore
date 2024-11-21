@@ -1,0 +1,20 @@
+# Ignorar arquivos de compilação
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar ambientes virtuais
+venv/
+env/
+*.egg-info/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de logs
+*.log
+
+# Ignorar configurações do editor
+.vscode/
+.idea/
