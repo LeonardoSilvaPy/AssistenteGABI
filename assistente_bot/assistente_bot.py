@@ -1,5 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+from dotenv import load_dotenv
+import os
 
 # Função para o comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -15,8 +17,15 @@ async def resposta_padrao(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Função principal para configurar e rodar o bot
 def main():
-    # Criação do aplicativo com seu token do bot
-    app = ApplicationBuilder().token("7668586336:AAEjYVRm3GBPlsPP8fVmT4_HYKZnH0ukJFQ").build()
+    
+    # Carrega as variáveis do arquivo .env
+    load_dotenv()
+
+    # Acessa o token da variável de ambiente
+    TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
+    # Criação do aplicativo com o token do bot carregado
+    app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
     # Adicionando handlers
     app.add_handler(CommandHandler("start", start))  # Handler do comando /start
