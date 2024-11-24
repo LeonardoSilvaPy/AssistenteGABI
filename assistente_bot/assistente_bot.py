@@ -6,7 +6,7 @@ import os
 # Função para o comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Saudação inicial e introdução ao agendamento presencial
-    mensagem = "Como posso lhe ajudar?"
+    mensagem = "Olá! 😊 Eu sou a Gabi, sua assistente virtual dedicada a apoiar profissionais da assistência social em Recife. Estou aqui para ajudar com informações sobre o Cadastro Único, Bolsa Família, Benefícios Eventuais, e outras orientações do SUAS. Como posso ajudá-lo(a) hoje? 🤗"
     await update.message.reply_text(mensagem)
 
 # Função para responder a qualquer outra mensagem após o início
