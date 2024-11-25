@@ -6,7 +6,7 @@ import os
 import pandas as pd
 
 MODEL_PATH = "../model"
-BASE_TELECRAS = "../processed_base/processed_data"
+BASE_TELECRAS = "../processed_base/processed_data/base_census_processed.csv"
 
 def load_base(path):
     data = pd.read_csv(path)
