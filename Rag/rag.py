@@ -11,7 +11,7 @@ os.environ['HUGGINGFACE_API_KEY'] = config('HUGGINGFACE_API_KEY')
 
 if __name__ == '__main__':
     # Caminho do arquivo PDF a ser carregado
-    file_path = '/app/rag/data/Cadastro_Unico.pdf'
+    file_path = '../Rag/data/Cadastro_Unico.pdf'
 
     # Carrega o documento PDF usando o PyPDFLoader
     loader = PyPDFLoader(file_path)
