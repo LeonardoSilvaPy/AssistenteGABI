@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from Bot.IABot import AIBot
@@ -21,7 +23,14 @@ async def resposta(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    app = ApplicationBuilder().token("7668586336:AAEjYVRm3GBPlsPP8fVmT4_HYKZnH0ukJFQ").build()
+    # Carrega as variáveis do arquivo .env
+    load_dotenv()
+
+    # Acessa o token da variável de ambiente
+    TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
+    # Criação do aplicativo com o token do bot carregado
+    app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))  # Handler do comando /start
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, resposta))
