@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-from responses.ResponseRAG import AIBot
+from Bot.IABot import AIBot
 
 
 # Função para o comando /start
