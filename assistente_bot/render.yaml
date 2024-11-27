@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: assistente-bot
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python assistente_bot/assistente_bot.py"
-    branch: main
