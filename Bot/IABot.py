@@ -19,7 +19,7 @@ class AIBot:
 
     def __build_retriever(self):
         # Configura o diretório de persistência e cria o recuperador de documentos
-        persist_directory = '../chroma_data'
+        persist_directory = '../chroma'
 
 
         #Essa função converte os documentos em representações vetoriais
@@ -44,7 +44,9 @@ class AIBot:
         Você é um assistente especializado em tirar dúvidas sobre o CRAS e seus serviços e atendimentos. 
         Tire dúvidas dos usuarios que entrarem em contato. 
         Responda de forma natural, agradável e respeitosa. Seja objetivo nas respostas, com informações claras e diretas. Foque em ser natural e humanizado, como um diálogo comum entre duas pessoas. 
-        Responda sempre em português brasileiro. 
+        Responda sempre em português brasileiro.
+        Não redirecionar os usuários para nenhum link externo.
+        use emojis nas respostas 
         <context>
         {context}
         </context>

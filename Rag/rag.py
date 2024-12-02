@@ -18,6 +18,7 @@ if __name__ == '__main__':
     loader = PyPDFLoader(file_path)
     docs = loader.load()
 
+
     # RecursiveCharacterTextSplitter: Esta classe é usada para dividir o conteúdo do
     # documento em pedaços menores de texto(chunks)
     text_splitter = RecursiveCharacterTextSplitter(
@@ -29,12 +30,12 @@ if __name__ == '__main__':
     chunks = text_splitter.split_documents(documents=docs)
 
     # Define o diretorio onde os dados vetoriais serão armazenados
-    persist_directory = '../chroma_data'
+    persist_directory = '../chroma'
     if not os.path.exists(persist_directory):
-        os.makedirs(persist_directory)
-        print(f"Diretório criado: {persist_directory}")
+      os.makedirs(persist_directory)
+      print(f"Diretório criado: {persist_directory}")
     else:
-        print(f"Diretório já existe: {persist_directory}")
+       print(f"Diretório já existe: {persist_directory}")
 
     # cria uma instancia de HuggingFaceEmbeddings, que é usada para converter o texto em vetores numéricos
     #Esses embeddings representam semanticamente o conteúdo de cada pedaço de texto e permitem a comparação e busca eficiente
@@ -48,3 +49,5 @@ if __name__ == '__main__':
 
     # adiciona os documentos divididos em chunks ao Chroma
     vector_store.add_documents(documents=chunks)
+
+
