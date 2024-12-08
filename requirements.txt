@@ -1,5 +1,5 @@
 python-decouple==3.8
-langchain==0.349
+langchain==0.3.9
 chromadb==0.5.4
 langchain-core==0.1.27
 langchain-groq==0.2.1
