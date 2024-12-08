@@ -1,18 +1,44 @@
-# AssistenteGABI
+# GabiTelecras
 
-Bem-vindo a AssistenteGABI! 🚀
+GabiTelecras: Chatbot Informativo para o CRAS
+Bem-vindo ao repositório oficial da GabiTelecras, um chatbot inteligente projetado para fornecer informações claras e diretas sobre os serviços oferecidos pelo Centro de Referência de Assistência Social (CRAS).
 
-## Como Contribuir?
+🌟 Objetivo da Gabi
+A GabiTelecras é uma assistente digital integrada ao SUAS (Sistema Único de Assistência Social), focada em facilitar o acesso a informações essenciais sobre os serviços sociais disponibilizados pelo CRAS, promovendo maior agilidade e acessibilidade.
 
-Para facilitar sua jornada, criamos um guia detalhado de contribuição que cobre todos os passos, desde como fazer fork do repositório até como realizar pull requests.
+⚙️ Tecnologias Utilizadas
+A GabiTelecras utiliza tecnologias de ponta para garantir uma experiência otimizada e confiável:
 
-[![📚 Explore o nosso guia de contribuição](https://img.shields.io/badge/Explore-o_guia_de_contribuição-blue?style=for-the-badge&logo=github)](https://github.com/LeonardoSilvaPy/AssistenteGABI/blob/main/CONTRIBUTING.md)
+LangChain: Construção de fluxos de conversação complexos.
+Llama: Processamento e compreensão de linguagem natural.
+Chroma: Gerenciamento e busca eficiente em bases de dados.
+python-telegram-bot: Integração com o Telegram para comunicação direta com os usuários.
+🛠️ Funcionalidades Atuais
+A GabiTelecras já oferece:
 
----
+✅ Informações detalhadas sobre os serviços oferecidos pelo CRAS.
+✅ Redirecionamento para FAQs úteis de forma rápida e intuitiva.
+✅ Auxílio direto ao usuário para entender benefícios como:
+Cadastro Único.
+Bolsa Família.
+Cesta Básica.
+Auxílio Funeral.
+Auxílio Natalidade.
+VEM.
+CREAS e LOAS.
 
-## Junte-se a nós!
+🔮 Futuras Implementações
+Estamos constantemente evoluindo a GabiTelecras! Planejamos:
 
-Venha ser parte da nossa comunidade e faça a diferença! Queremos que você traga suas ideias e habilidades para tornar o AssistenteGABI um projeto ainda mais impactante. Cada contribuição é bem-vinda!
+🔄 Redirecionamento para agendamento de consultas.
+📧 Envio de e-mails para confirmação de atendimentos.
+🤝 Integração com outras plataformas.
 
+## Acesse a Documentação
 
+[![Acessar Documentação](https://via.placeholder.com/200x50/0056b3/FFFFFF?text=Acessar+Documentação)](https://leonardosilvapy.github.io/AssistenteGABI/)
 
+📞 Contato
+Para dúvidas ou sugestões, entre em contato pelo e-mail: gabitelecras@gmail.com
+
+💡 Nota: Este projeto está em desenvolvimento ativo. Algumas funcionalidades ainda podem estar sujeitas a alterações ou melhorias.
