@@ -3,7 +3,7 @@ langchain==0.1.2
 chromadb==0.5.4
 langchain-core==0.1.27
 langchain-groq==0.2.1
-langchain-huggingface==0.0.9
+langchain-huggingface==0.1.2
 langchain-community==0.2.15
 
 # Dependências para o bot
