@@ -13,11 +13,14 @@ LangChain: Construção de fluxos de conversação complexos.
 Llama: Processamento e compreensão de linguagem natural.
 Chroma: Gerenciamento e busca eficiente em bases de dados.
 python-telegram-bot: Integração com o Telegram para comunicação direta com os usuários.
+
 🛠️ Funcionalidades Atuais
 A GabiTelecras já oferece:
 
 ✅ Informações detalhadas sobre os serviços oferecidos pelo CRAS.
+
 ✅ Redirecionamento para FAQs úteis de forma rápida e intuitiva.
+
 ✅ Auxílio direto ao usuário para entender benefícios como:
 Cadastro Único.
 Bolsa Família.
@@ -31,7 +34,9 @@ CREAS e LOAS.
 Estamos constantemente evoluindo a GabiTelecras! Planejamos:
 
 🔄 Redirecionamento para agendamento de consultas.
+
 📧 Envio de e-mails para confirmação de atendimentos.
+
 🤝 Integração com outras plataformas.
 
 ## Acesse a Documentação
