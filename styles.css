@@ -1,0 +1,169 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 90%; /* Definindo a largura como 90% da tela */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #0056b3;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo das seções */
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Equipe */
+.team-member-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Aumentando o espaçamento entre os cards */
+    margin-top: 20px;
+}
+
+.team-member {
+    flex: 1 1 calc(50% - 40px); /* Ajustando para dar mais espaço entre os cards */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Adicionando espaço abaixo do título */
+    color: #34495e;
+}
+
+.team-member p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem; /* Espaço abaixo do parágrafo */
+}
+
+.team-member p strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.team-member ul {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 1rem; /* Espaço abaixo da lista */
+}
+
+.team-member ul li {
+    margin-bottom: 0.5rem; /* Adicionando espaço entre os itens da lista */
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+/* Agradecimentos */
+.section p strong {
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Repositórios */
+.section a {
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Rodapé e contato */
+.section:last-child {
+    text-align: center;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .team-member {
+        flex: 1 1 100%; /* Cada card ocupa 100% da largura em telas menores */
+    }
+}

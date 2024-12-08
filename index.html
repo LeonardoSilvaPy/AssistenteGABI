@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleCras: Documentação do Projeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TeleCras: Documentação do Projeto</h1>
+        <p>Bem-vindo à documentação oficial do TeleCras, um projeto desenvolvido para conectar usuários ao Centro de Referência de Assistência Social (CRAS) de maneira acessível e eficiente, utilizando tecnologias modernas e metodologias ágeis.</p>
+
+        <div class="section">
+            <h2>Visão Geral do Projeto</h2>
+            <p>O TeleCras é composto por três partes principais, cada uma com um papel essencial no funcionamento do sistema:</p>
+            <ol>
+                <li>
+                    <strong>Chatbot (GabiTelecras)</strong>
+                    <p>Descrição: Um assistente virtual que fornece informações claras e objetivas sobre os serviços oferecidos pelo CRAS, além de redirecionar usuários para respostas rápidas.</p>
+                    <p><strong>Principais Funcionalidades:</strong></p>
+                    <ul>
+                        <li>Informações sobre Cadastro Único, Bolsa Família, Auxílio Funeral, entre outros.</li>
+                    </ul>
+                    <p><strong>Tecnologias Utilizadas:</strong> LangChain, Llama, Chroma, python-telegram-bot.</p>
+                </li>
+                <li>
+                    <strong>Frontend (Portal TeleCras)</strong>
+                    <p>Descrição: Uma interface web responsiva e intuitiva que centraliza serviços e informações do CRAS.</p>
+                    <p><strong>Principais Funcionalidades:</strong></p>
+                    <ul>
+                        <li>Cadastro e login de usuários.</li>
+                        <li>Busca de unidades do CRAS por CEP.</li>
+                        <li>Área para agendamentos e consultas.</li>
+                        <li>Botão de acesso rápido ao chatbot.</li>
+                    </ul>
+                    <p><strong>Tecnologias Utilizadas:</strong> Angular, Bootstrap, TypeScript.</p>
+                </li>
+                <li>
+                    <strong>Backend (APIs e Banco de Dados)</strong>
+                    <p>Descrição: Gerencia as APIs, conexões com o banco de dados e operações CRUD necessárias para o funcionamento do portal.</p>
+                    <p><strong>Principais Funcionalidades:</strong></p>
+                    <ul>
+                        <li>Conexão segura com o banco de dados Railway.</li>
+                        <li>Rotas para gerenciar usuários, agendamentos e informações do portal.</li>
+                    </ul>
+                    <p><strong>Tecnologias Utilizadas:</strong> Python, Flask, SQLAlchemy.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Metodologias Ágeis Utilizadas</h2>
+            <p><strong>Scrum</strong></p>
+            <ul>
+                <li>Planejamento de sprints.</li>
+                <li>Reuniões diárias para acompanhamento do progresso.</li>
+                <li>Revisões e retrospectivas ao final de cada sprint.</li>
+            </ul>
+            <p><strong>Kanban</strong></p>
+            <ul>
+                <li>Ferramenta Utilizada: Trello.</li>
+                <li>Objetivo: Gerenciamento visual das tarefas em andamento, pendentes e concluídas.</li>
+                <li>Benefícios: Acompanhamento contínuo e maior organização.</li>
+            </ul>
+        </div>
+
+<div class="section">
+    <h2>Equipe do Projeto</h2>
+    <p>Este projeto foi desenvolvido por uma equipe dedicada, composta pelos seguintes participantes:</p>
+
+    <div class="team-member">
+        <h3>Ana Júlia Luiz</h3>
+        <p><strong>Papel:</strong> Product Owner (PO), Desenvolvedor Frontend, Especialista em IA e Recuperação de Informações</p>
+        <p><strong>Atividades e Responsabilidades:</strong></p>
+        <ul>
+            <li>Implementou as tecnologias Llama, Chroma, LangChain e RAG (Retriever-Augmented Generation), permitindo que o chatbot oferecesse respostas mais precisas e contextuais aos usuários.</li>
+            <li>Desenvolveu a interface de usuário (frontend), garantindo uma experiência de navegação intuitiva e responsiva.</li>
+            <li>Colaborou na definição dos requisitos do produto e na priorização das funcionalidades durante o desenvolvimento.</li>
+        </ul>
+    </div>
+
+    <div class="team-member">
+        <h3>Edmilson Junior</h3>
+        <p><strong>Papel:</strong> Engenheiro de Dados, Desenvolvedor Backend, Arquiteto de Software, Administrador de Ambiente de Desenvolvimento</p>
+        <p><strong>Atividades e Responsabilidades:</strong></p>
+        <ul>
+            <li>Criou, integrou e gerenciou o banco de dados, utilizando o sistema Railway para garantir a escalabilidade e integridade dos dados.</li>
+            <li>Projetou e implementou a arquitetura do sistema, garantindo a eficiência no processamento de dados e a comunicação entre as partes do projeto.</li>
+            <li>Configurou e manteve os ambientes de desenvolvimento da equipe, solucionando problemas relacionados a IDEs e ferramentas.</li>
+        </ul>
+    </div>
+
+    <div class="team-member">
+        <h3>Erika Ximenes</h3>
+        <p><strong>Papel:</strong> Analista de Documentação, Comunicação e Testes</p>
+        <p><strong>Atividades e Responsabilidades:</strong></p>
+        <ul>
+            <li>Contribuiu com a leitura e resumo de documentos técnicos e PDFs, facilitando a compreensão e organização das informações.</li>
+            <li>Criou apresentações de slides e vídeos explicativos para reuniões e apresentações do projeto.</li>
+            <li>Auxiliou na elaboração de relatórios e na organização de materiais de comunicação interna.</li>
+            <li>Participou de discussões sobre o projeto, oferecendo feedback valioso sobre a clareza e a apresentação das informações.</li>
+            <li>Realizou testes das funcionalidades do sistema, identificando erros e inconsistências, e colaborando com a equipe para correção.</li>
+        </ul>
+    </div>
+
+    <div class="team-member">
+        <h3>Leonardo Da Silva</h3>
+        <p><strong>Papel:</strong> Desenvolvedor Backend, Documentador Técnico, Administrador de Repositórios GitHub, Desenvolvedor de Integração e Configuração do Chatbot</p>
+        <p><strong>Atividades e Responsabilidades:</strong></p>
+        <ul>
+            <li>Desenvolveu as rotas de integração entre o backend e o frontend, garantindo que os dados fossem trocados corretamente entre o servidor e a interface do usuário.</li>
+            <li>Implementou as operações de CRUD (Create, Read, Update, Delete) no backend, permitindo a manipulação de dados através da API.</li>
+            <li>Criou e gerenciou os repositórios no GitHub, mantendo a estrutura adequada para o projeto e garantindo o controle de versão eficiente.</li>
+            <li>Documentou tecnicamente o processo de desenvolvimento do projeto, garantindo clareza e continuidade nas entregas.</li>
+            <li>Integrou o chatbot GabiTelecras com o Telegram, configurando os fluxos iniciais e garantindo que o assistente virtual estivesse funcional na plataforma.</li>
+        </ul>
+    </div>
+
+    <div class="team-member">
+        <h3>Reynan Pires</h3>
+        <p><strong>Papel:</strong> Suporte Administrativo, Organizacional e Testes</p>
+        <p><strong>Atividades e Responsabilidades:</strong></p>
+        <ul>
+            <li>Auxiliou na criação de tabelas e planilhas em Excel para organização de dados e controle de progresso.</li>
+            <li>Tirou capturas de tela e gerenciou o material visual para apresentações e demonstrações do projeto.</li>
+            <li>Participou das reuniões e discutiu estratégias, apoiando na coordenação e no planejamento das atividades.</li>
+            <li>Auxiliou na organização de eventos e no processo de documentação, facilitando o fluxo do trabalho da equipe.</li>
+            <li>Contribuiu nos testes de funcionalidades, validando o funcionamento correto das ferramentas e reportando problemas para a equipe técnica.</li>
+        </ul>
+    </div>
+
+    <div class="team-member">
+        <h3>Thaís Santana Lira</h3>
+        <p><strong>Papel:</strong> Scrum Master, Desenvolvedor Frontend</p>
+        <p><strong>Atividades e Responsabilidades:</strong></p>
+        <ul>
+            <li>Facilitou a implementação das práticas do Scrum, removendo impedimentos e garantindo a produtividade da equipe.</li>
+            <li>Desenvolveu a interface de usuário (frontend), criando páginas e interações de fácil acesso e responsivas para os usuários.</li>
+            <li>Colaborou com a equipe para garantir que os requisitos de funcionalidade e usabilidade fossem atendidos no frontend.</li>
+        </ul>
+    </div>
+</div>
+
+
+	<div class="section">
+   	 <h2>Agradecimentos Especiais</h2>
+    	<p><strong>Gabriela Sandreli</strong> – Mentora incansável, colega de equipe, fonte de motivação e inspiração para o desenvolvimento do GabiTelecras. Sua orientação e apoio foram fundamentais para nossa jornada.</p>
+    	<p><strong>Roberth Lins</strong> – Professor excepcional, que compartilhou seus vastos conhecimentos, os quais foram essenciais para o desenvolvimento técnico e estratégico do projeto. Sua dedicação ao ensino foi um pilar para nossa evolução.</p>
+   	<p><strong>Jailton Raniere</strong> – Pela generosidade em nos apresentar aos diversos serviços e benefícios oferecidos pelo CRAS, proporcionando uma compreensão valiosa que agregou imensamente à proposta do projeto.</p>
+    	<p><strong>Hislândia Maria</strong> – Com sua liderança e visão que inspiraram a equipe ao longo do processo, fornecendo o suporte e os recursos necessários para que pudéssemos alcançar nossos objetivos com sucesso.</p>
+</div>
+
+        <div class="section">
+            <h2>Estrutura do Repositório</h2>
+            <p><strong>Frontend:</strong> Código disponível no repositório: <a href="https://github.com/Anaju7/TeleCras">GitHub</a></p>
+            <p><strong>Backend:</strong> Código disponível no repositório: <a href="https://github.com/Ed-atj/Back-IA">GitHub</a></p>
+            <p><strong>Chatbot:</strong> Código disponível no repositório: <a href="https://github.com/LeonardoSilvaPy/AssistenteGABI">GitHub</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Contato</h2>
+            <p>Em caso de dúvidas ou sugestões, entre em contato:</p>
+            <p><strong>E-mail:</strong> gabitelecras@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
