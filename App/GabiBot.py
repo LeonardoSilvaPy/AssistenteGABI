@@ -4,8 +4,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from Bot.IABot import AIBot
 
-
-# Função para o comando /start
+ # Função para o comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Saudação inicial e introdução ao agendamento presencial
     mensagem = "Olá! 😊 Eu sou a Gabi, sua assistente virtual dedicada a apoiar profissionais da assistência social em Recife. Estou aqui para ajudar com informações sobre o Cadastro Único, Bolsa Família, Benefícios Eventuais, e outras orientações do SUAS. Como posso ajudá-lo(a) hoje? 🤗"
